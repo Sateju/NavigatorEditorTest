@@ -9,4 +9,5 @@ build
 gen/
 cache.xml
 gradle
+gradlew
 gradlew.bat
