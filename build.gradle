@@ -5,6 +5,7 @@ buildscript {
     ext {
         kotlin_version = '1.2.71'
         gradle_tools_version = '3.2.1'
+        nav_safe_args_version = '1.0.0-alpha06'
 
         compile_sdk_version = 28
         target_sdk_version = 28
@@ -24,6 +25,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_tools_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$nav_safe_args_version"
     }
 }
 
