@@ -34,6 +34,8 @@ dependencies {
     //Application dependencies
     implementation applicationDependencies.kotlin
     implementation applicationDependencies.appCompat
+    implementation applicationDependencies.navFragment
+    implementation applicationDependencies.navUi
 
     //Unit testing
     testImplementation unitTestDependencies.junit
@@ -41,4 +43,5 @@ dependencies {
     //Instrumentation testing
     androidTestImplementation instrumentationTestDependencies.runner
     androidTestImplementation instrumentationTestDependencies.espresso
+    androidTestImplementation instrumentationTestDependencies.navTesting
 }

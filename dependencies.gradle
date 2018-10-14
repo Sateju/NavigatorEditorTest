@@ -1,6 +1,7 @@
 ext {
     // Android libraries
     appCompat_version = '1.0.0'
+    nav_version = '1.0.0-alpha06'
 
     // Unit testing
     junit_version = '4.12'
@@ -11,7 +12,9 @@ ext {
 
     mainApplication = [
             kotlin   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
-            appCompat: "androidx.appcompat:appcompat:$appCompat_version"
+            appCompat: "androidx.appcompat:appcompat:$appCompat_version",
+            navFragment: "android.arch.navigation:navigation-fragment-ktx:$nav_version",
+            navUi: "android.arch.navigation:navigation-ui-ktx:$nav_version"
     ]
 
     unitTesting = [
@@ -20,7 +23,8 @@ ext {
 
     instrumentationTesting = [
             runner  : "androidx.test:runner:$runner_version",
-            espresso: "androidx.test.espresso:espresso-core:$espresso_core_version"
+            espresso: "androidx.test.espresso:espresso-core:$espresso_core_version",
+            navTesting: "android.arch.navigation:navigation-testing-ktx:$nav_version"
     ]
 }
 
